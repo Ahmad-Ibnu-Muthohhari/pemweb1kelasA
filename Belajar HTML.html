@@ -46,7 +46,34 @@
   <h6>Pemrograman WEB 1</h6>
   <img src="c:\Users\Asusss\Documents\Ahmad Ibnu Muthohhari\Gambar computer.jpg" alt="Gambar Komputer" width="300">
 
-  
+      <form action="formulir.html" method="get">
+        Nama: <input type="text" name="nama" value="Nama Anda" /><br /><br />
+
+        Password: <input type="password" name="password" /><br /><br />
+
+        Jenis Kelamin : <br />
+        <input type="radio" name="jenis_kelamin" value="laki-laki" checked /> Laki Laki<br />
+        <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan<br /><br />
+
+        Hobi: <br />
+        <input type="checkbox" name="hobi_baca" /> Membaca Buku<br />
+        <input type="checkbox" name="hobi_nulis" checked /> Menulis<br />
+        <input type="checkbox" name="hobi_mancing" /> Memancing<br /><br />
+
+        Asal Kota: 
+        <select name="asal_kota">
+            <option value="Kota Mojokerto">Mojokerto</option>
+            <option value="Kota Jombang">Jombang</option>
+            <option value="Kota Lombok">Lombok</option>
+        </select><br /><br />
+
+        Komentar Anda: <br />
+        <textarea name="komentar" rows="5" cols="20">
+Silahkan isi Sahabat :>
+        </textarea><br /><br />
+
+        <input type="submit" value="Mulai Proses!" />
+    </form>
  
     
 </body>
