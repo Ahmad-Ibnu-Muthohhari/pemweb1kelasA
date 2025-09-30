@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lanjutan - Contoh Lengkap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            border: 2px solid #333;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            color: rgb(255, 0, 0);
+            font-weight: bold;
+        }
+        img {
+            margin: 10px;
+        }
+        dl {
+            background: #f4f4f4;
+            padding: 10px;
+        }
+        dt {
+            font-weight: bold;
+            color: #333;
+        }
+        dd {
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Lanjutan - Contoh Lengkap</h1>
+    <p>Contoh ini berisi materi dari <span class="highlight">Tag Div & Span, Pengaturan Gambar, Description List, dan Internal Link.</span></p>
+
+    <!-- 1. Contoh penggunaan DIV & SPAN -->
+    <div class="container" id="divspan">
+        <h2>1. Tag Div & Span</h2>
+        <p>Tag <code>&lt;div&gt;</code> digunakan sebagai <span class="highlight">container</span> untuk memisahkan struktur.</p>
+        <p>Tag <code>&lt;span&gt;</code> digunakan untuk <span style="color:blue;">menandai bagian teks tertentu</span> dalam satu baris.</p>
+    </div>
+
+    <!-- 2. Contoh Gambar dengan align dan border -->
+    <div class="container" id="gambar">
+        <h2>2. Mengatur Tampilan Gambar</h2>
+        <p>Contoh gambar dengan <code>align="left"</code> dan <code>border</code>:</p>
+        <img src="Unipdu.png" alt="Contoh Gambar" align="left" border="5">
+        <p>Ini adalah teks yang berada di sebelah kanan gambar. Karena gambar diberi <code>align="left"</code>, maka teks ini menempel di samping gambar.</p>
+        <div style="clear: both;"></div>
+    </div>
+
+    <!-- 3. Contoh Description List -->
+    <div class="container" id="deskripsi">
+        <h2>3. Description List</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language, bahasa untuk membuat struktur halaman web.</dd>
+            
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets, digunakan untuk mengatur tampilan halaman web.</dd>
+            
+            <dt>JavaScript</dt>
+            <dd>Bahasa pemrograman yang digunakan untuk membuat halaman web interaktif.</dd>
+        </dl>
+    </div>
+
+    <!-- 4. Contoh Internal Link -->
+    <div class="container" id="link">
+        <h2>4. Internal Link dengan Atribut ID</h2>
+        <p>Gunakan link berikut untuk berpindah ke bagian tertentu:</p>
+        <ul>
+            <li><a href="#divspan">Ke Bagian Div & Span</a></li>
+            <li><a href="#gambar">Ke Bagian Gambar</a></li>
+            <li><a href="#deskripsi">Ke Bagian Description List</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
