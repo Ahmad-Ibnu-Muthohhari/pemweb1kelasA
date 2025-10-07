@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pendaftaran TPQ AN-NUR</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    header, footer {
+      background-color: #eee;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+    main {
+      margin-bottom: 30px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+    table, th, td {
+      border: 1px solid #000;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    ul {
+      max-width: 400px;
+    }
+    label {
+      display: inline-block;
+      width: 120px;
+      vertical-align: top;
+      margin-top: 6px;
+    }
+    input[type="text"], input[type="password"], select, textarea {
+      width: 250px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    textarea {
+      height: 60px;
+      resize: vertical;
+    }
+    .checkbox-group, .radio-group {
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .checkbox-group label, .radio-group label {
+      width: auto;
+      margin-right: 10px;
+    }
+    .form-row {
+      margin-bottom: 12px;
+    }
+    input[type="submit"] {
+      padding: 8px 20px;
+      cursor: pointer;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Pendaftaran Santri TPQ AN-NUR</h2>
+  </header>
+
+  <main>
+    <h3>FORMULIR PENDAFTARAN SANTRI</h3>
+    <form action="#" method="GET">
+      <div class="form-row">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required />
+      </div>
+
+      <div class="form-row">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password" required />
+      </div>
+
+      <div class="form-row">
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="jk" value="Laki-laki" required /> Laki-laki</label>
+          <label><input type="radio" name="jk" value="Perempuan" /> Perempuan</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>Hobi (Pilih 3):</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="hobi" value="Membaca" /> Membaca</label>
+          <label><input type="checkbox" name="hobi" value="Olahraga" /> Olahraga</label>
+          <label><input type="checkbox" name="hobi" value="Coding" /> Coding</label>
+          <label><input type="checkbox" name="hobi" value="Musik" /> Musik</label>
+          <label><input type="checkbox" name="hobi" value="Travelling" /> Travelling</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="kota">Asal Kota:</label>
+        <select id="kota" name="kota" required>
+          <option value="" disabled selected>Pilih kota</option>
+          <option value="Jombang">Jombang</option>
+          <option value="Surabaya">Lombok</option>
+          <option value="Bandung">Mojokerto</option>
+          <option value="Lainnya">Lainnya</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="komentar">Komentar:</label>
+        <textarea id="komentar" name="komentar" placeholder="Tulis komentar Anda..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <input type="submit" value="KIRIM DATA (GET)" />
+      </div>
+    </form>
+
+    <h3>Jadwal Pengajar</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Hari</th>
+          <th>Jam Mengajar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Senin</td>
+          <td>08:00 - 12:00</td>
+        </tr>
+        <tr>
+          <td>Rabu</td>
+          <td>15:00 - 17:00</td>
+        </tr>
+        <tr>
+          <td>Jumat</td>
+          <td>17:00 - 20:00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Langkah Pendaftaran</h3>
+    <ul>
+      <li>Isi formulir dengan lengkap.</li>
+      <li>Klik tombol "KIRIM DATA (GET)".</li>
+      <li>Tunggu konfirmasi email.</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>Kontak: +62 954860058 | <a href="https://www.annur.ac.id" target="_blank" style="color: #66ccff;">Kunjungi Homepage AN NUR</a></p>
+  </footer>
+</body>
+</html>
