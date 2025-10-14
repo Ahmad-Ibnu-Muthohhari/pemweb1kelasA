@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Pertama Saya</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* Gambar banner langit */
+    .banner {
+      background-image: url('images/banner.jpg');
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+      border-top: 3px solid #87CEEB;
+      border-bottom: 3px solid #87CEEB;
+    }
+
+    .container {
+      display: flex;
+      padding: 10px;
+    }
+
+    .content, .sidebar {
+      flex: 1;
+      padding: 20px;
+      border: 1px solid #ccc;
+      margin: 5px;
+      background-color: white;
+    }
+
+    .content {
+      color: darkblue;
+    }
+
+    footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>WEBSITE PERTEMUAN KE 5</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Berita</a>
+      <a href="#">Tentang Kami</a>
+    </nav>
+  </header>
+
+    <div class="banner">
+  <img src="images/banner.jpg" alt="Langit" style="width:100%; height:250px; object-fit:cover;">
+</div>
+
+
+  <div class="container">
+    <div class="content">
+      <h2>Content</h2>
+      <p>Ini adalah bagian konten utama.</p>
+    </div>
+
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Ini adalah bagian sidebar.</p>
+    </div>
+  </div>
+
+  <footer>
+    Copyright by Ahmad Ibnu Muthohhari — NIM: 4124023
+  </footer>
+
+</body>
+</html>
